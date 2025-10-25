@@ -7,9 +7,8 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from openai import OpenAI
 
-BOT_TOKEN = os.getenv("7977756426:AAGXoncL7YmxkQnfX4EAuROtGnfe6AT4gGY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
 
 if not BOT_TOKEN or not OPENAI_API_KEY:
     raise RuntimeError("Missing BOT_TOKEN or OPENAI_API_KEY environment variable")
